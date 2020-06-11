@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="pt-br">
+
 <head>
 	<title>Lucas Eliel da Silva</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="SolMusic HTML Template">
 	<meta name="keywords" content="music, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<!-- Favicon -->
-	<link href="img/icone.png" rel="shortcut icon"/>
+	<link href="img/icone.png" rel="shortcut icon" />
 
 	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
- 
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+		rel="stylesheet">
+
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/slicknav.min.css" />
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -33,15 +36,17 @@
 	<header style="background-color: black;">
 		<table class="site-logo">
 			<tr>
-				<td style="width:100px"><img src="img/figure.png" alt=""></td>			  
-				<td style="padding-left: 20px;"><h2 style="color: gray;">Lucas Eliel da Silva</h2></td> 
+				<td style="width:100px"><img src="img/figure.png" alt=""></td>
+				<td style="padding-left: 20px;">
+					<h2 style="color: gray;">Lucas Eliel da Silva</h2>
+				</td>
 			</tr>
 		</table>
 	</header>
 	<!-- Header section end -->
 
 	<!-- Hero section -->
-	<section class="hero-section">
+	<section class="hero-section" id="top">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="container">
@@ -52,17 +57,45 @@
 								<p>
 									<div style="color: aliceblue;">Engenheiro | Desenvolvedor de Sofwtare</div></br>
 									<div style="color: aliceblue;">
-										Meu nome é Lucas, sou natural de Itatiba-SP e iniciei meus estudos e qualificações muito cedo (12 anos de idade).</br> 
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meu nome é Lucas, sou natural de Itatiba-SP e
+										iniciei meus estudos e qualificações com a idade de 13 para 14 anos.</br>
 
-										Sou graduado em Engenharia Elétrica, um curso que me proporcionou alto conhecimento em nível de hardware, isto é, modelagem, 
-										física, matemática, projetos de microeletrônica e muito mais. Somado este conhecimento à experiência de debugs em equipamentos 
-										de rádio-frequência (RRU, ODU, Microwave) em laboratório de Telecomunicações, desenvolvi um amor muito grande por algoritimos 
-										computacionais, entendendo o que poderia ser manipulado físicamente através de linhas de códigos.</br>
-										
-										Desde então, minha jornada como Engenheiro/Desenvolvedor somente cresce.
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sou graduado em Engenharia Elétrica, um curso que
+										me proporcionou alto conhecimento em nível de hardware, isto é, modelagem,
+										física, matemática, projetos de microeletrônica e muito mais. Somado este
+										conhecimento à experiência de debugs em equipamentos
+										de rádio-frequência (RRU, ODU, Microwave) em laboratório de Telecomunicações,
+										desenvolvi um amor muito grande por algoritimos
+										computacionais, entendendo o que poderia ser manipulado físicamente através de
+										linhas de códigos.</br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desde então, minha jornada como
+										Engenheiro/Desenvolvedor somente cresce.
 									</div>
-								</p>								
+								</p>
 							</div>
+
+							<button class="site-btn" onclick="moverParaTecnologias()">Tecnologias</button>
+							&nbsp;
+							<button class="site-btn2" onclick="moverParaLinhaDoTempo()">Currículo na Linha do
+								tempo</button>
+							&nbsp;
+							<button class="site-btn3" onclick="moverParaContato()">Contato</button>
+
+							<script>
+								function moverParaTecnologias() {
+									document.getElementById('tecnologias').scrollIntoView();
+								}
+								function moverParaLinhaDoTempo() {
+									document.getElementById('linhadotempo').scrollIntoView();
+									window.setTimeout(function () { top(); }, 2000);
+								}
+								function moverParaContato() {
+									document.getElementById('contato').scrollIntoView();
+									window.setTimeout(function () { top(); }, 2000);
+								}
+							</script>
+
 						</div>
 						<div class="col-4">
 							<div style="width: 100%; height: 100%; align-self: center;">
@@ -77,45 +110,27 @@
 
 
 
-	<section class="hero-section">
+	<section class="hero-section" id="tecnologias">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item2">
 				<div class="container">
 
 					<div class="row">
-						<div class="col-2">
-							<div style="width: 100%; height: 100%; align-self: center;">
+						<div class="col-4" align="center">
+							<div style="width: 40%; height: 40%; align-self: center;">
 								<img src="img/tecnologias/docker.png">
 							</div>
 						</div>
 
-						<div class="col-2">
-							<div style="width: 100%; height: 100%; align-self: center;">
+						<div class="col-4" align="center">
+							<div style="width: 40%; height: 40%; align-self: center;">
 								<img src="img/tecnologias/hibernate.png">
 							</div>
 						</div>
 
-						<div class="col-2">
-							<div style="width: 60%; height: 60%; align-self: center; padding-left: 30px;">
+						<div class="col-4" align="center">
+							<div style="width: 30%; height: 30%; align-self: center; padding-left: 30px;">
 								<img src="img/tecnologias/java.png">
-							</div>
-						</div>
-
-						<div class="col-2">
-							<div style="width: 100%; height: 100%; align-self: center;">
-								<img src="img/tecnologias/jwt.png">
-							</div>
-						</div>
-
-						<div class="col-2">
-							<div style="width: 100%; height: 100%; align-self: center;">
-								<img src="img/tecnologias/kafka.png">
-							</div>
-						</div>
-
-						<div class="col-2">
-							<div style="width: 100%; height: 100%; align-self: center;">
-								<img src="img/tecnologias/maven.jpeg">
 							</div>
 						</div>
 					</div>
@@ -123,19 +138,45 @@
 					</br>
 
 					<div class="row">
-						<div class="col-2">
+						<div class="col-4" align="center">
+							<div style="width: 50%; height: 50%; align-self: center;">
+								<img src="img/tecnologias/jwt.png">
+							</div>
+						</div>
+
+						<div class="col-4" align="center">
+							<div style="width: 50%; height: 50%; align-self: center;">
+								<img src="img/tecnologias/kafka.png">
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div style="width: 50%; height: 50%; align-self: center;">
+								<img src="img/tecnologias/maven.jpeg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hs-item2">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-4" align="center">
 							<div style="width: 100%; height: 100%; align-self: center;">
 								<img src="img/tecnologias/postgresql.png">
 							</div>
 						</div>
 
-						<div class="col-2">
+						<div class="col-4" align="center">
 							<div style="width: 100%; height: 100%; align-self: center;">
 								<img src="img/tecnologias/rabbitmq.png">
 							</div>
 						</div>
 
-						<div class="col-2">
+						<div class="col-4" align="center">
 							<div style="width: 100%; height: 100%; align-self: center;">
 								<img src="img/tecnologias/spring.png">
 							</div>
@@ -149,397 +190,405 @@
 
 
 	<!-- Intro section -->
-	<section class="intro-section spad">
-		<div class="container">
-			<div class="row">
-				<h2><span>Confira minha jornada:</span></h2>
+	<section class="intro-section spad" style="background-color: #0a183d;">
+		<div class="row">
+			<div class="col-sm-12" style="margin: 20px;" align="center">
+				<h2 style="color: #fc0254;">Confira minha jornada:</h2>
 			</div>
+		</div>
+	</section>
 
-			</br></br></br></br>
-
+	<section class="intro-section spad" id="linhadotempo">
+		<div class="container">
 			<!--2019-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2019</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2019</h1>Minha Idade: 22 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 05/12</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_usf.jpg" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="40%" height="40%" src="img/linha do tempo/logo_usf.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">15/12</h5>
+									<p class="card-text">Término da Graduacao em Engenharia Elétrica</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Término da Graduacao em Engenharia Elétrica</h5>
 						</div>
 					</div>
-					</br>
+	
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 05/01</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_multitec.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_multitec.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">05/01</h5>
+									<p class="card-text">Início das atividades de Desenvolvedor ERP na empresa</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início das atividades de Desenvolvedor ERP na empresa</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
-
+			</br></br>
 
 			<!--2018-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2018</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2018</h1>Minha Idade: 21 anos</div> 
+				</div>
 				<div class="col-lg-8">
 
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 10/08</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 50%; height: 50%; align-self: center;">
-								<img src="img/linha do tempo/logo_stage.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_stage.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">13/12</h5>
+									<p class="card-text">Término das atividades com Telecom Enginner</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4">
-							<h5>Término das atividades com Telecom Enginner</h5>
-						</div>
 					</div>
-					</br>
 
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 10/08</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 50%; height: 50%; align-self: center;">
-								<img src="img/linha do tempo/logo_stage.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_stage.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">10/08</h5>
+									<p class="card-text">Início das atividades com Telecom Enginner</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início das atividades com Telecom Enginner</h5>
 						</div>
 					</div>
-					</br>
+					
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 17/07</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 50%; height: 50%; align-self: center;">
-								<img src="img/linha do tempo/logo_les.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="40%" height="40%" src="img/linha do tempo/logo_les.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">17/07</h5>
+									<p class="card-text">Término das atividades de Custom Desenvolvedor ERP</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Término das atividades de Custom Desenvolvedor ERP</h5>
 						</div>
 					</div>
-					</br>
+					
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 20/01</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 50%; height: 50%; align-self: center;">
-								<img src="img/linha do tempo/logo_les.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="40%" height="40%" src="img/linha do tempo/logo_les.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">20/01</h5>
+									<p class="card-text">Início das atividades de Custom Desenvolvedor ERP</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início das atividades de Custom Desenvolvedor ERP</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2017-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2017</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2017</h1>Minha Idade: 20 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 01/11</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_lcr.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="80%" height="80%" src="img/linha do tempo/logo_lcr.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">01/11</h5>
+									<p class="card-text">Término das atividades de Desenvolvedor BI na empresa</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Término das atividades de Desenvolvedor BI na empresa</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2016-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2016</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2016</h1>Minha Idade: 19 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 03/06</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 50%; height: 50%; align-self: center;">
-								<img src="img/linha do tempo/logo_alura.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="40%" height="40%" src="img/linha do tempo/logo_alura.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">03/06</h5>
+									<p class="card-text">Início na plataforma Alura/Caelum</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início na plataforma Alura/Caelum</h5>
 						</div>
 					</div>
 
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 04/04</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_lcr.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="80%" height="80%" src="img/linha do tempo/logo_lcr.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">04/04</h5>
+									<p class="card-text">Início como Desenvolvedor BI</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início como Desenvolvedor BI</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2015-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2015</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2015</h1>Minha Idade: 18 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 01/02</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_usf.jpg" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="40%" height="40%" src="img/linha do tempo/logo_usf.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">01/02</h5>
+									<p class="card-text">Início da Graduacao em Engenharia Elétrica</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início da Graduacao em Engenharia Elétrica</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2014-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2014</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2014</h1>Minha Idade: 17 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 16/12</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_etec.jpg" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="60%" height="60%" src="img/linha do tempo/logo_etec.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">16/12</h5>
+									<p class="card-text">Fim do Curso Técnico em Eletrônica</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Fim do Curso Técnico em Eletrônica</h5>
 						</div>
 					</div>
-					</br>
+					
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 04/10</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_people.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_people.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">04/10</h5>
+									<p class="card-text">Fim do Curso de Inglês</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Fim do Curso de Inglês</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2013-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2013</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2013</h1>Minha Idade: 16 anos</div> 
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 09/11</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_people.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_people.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">09/11</h5>
+									<p class="card-text">Fim do Curso de Hardware de Computadores</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Fim do Curso de Hardware de Computadores</h5>
 						</div>
 					</div>
-					</br>
+					
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 01/02</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_etec.jpg" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img width="60%" height="60%" src="img/linha do tempo/logo_etec.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">01/12</h5>
+									<p class="card-text">Início do Curso Técnico em Eletrônica</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início do Curso Técnico em Eletrônica</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2012-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2012</h1></div>
+				<div class="col-lg-4">
+					<div style="margin: 20px;"><h1>2012</h1>Minha Idade: 15 anos</div>
+				</div>
 				<div class="col-lg-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 10/11</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_people.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_people.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">10/11</h5>
+									<p class="card-text">Início do Curso de Hardware de Computadores</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início do Curso de Hardware de Computadores</h5>
 						</div>
 					</div>
-					</br>
+					
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 25/08</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 70%; height: 70%; align-self: center;">
-								<img src="img/linha do tempo/logo_people.png" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_people.png" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">25/08</h5>
+									<p class="card-text">Início do Curso de Inglês</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início do Curso de Inglês</h5>
 						</div>
 					</div>
-					</br>
+
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 27/02</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 100%; height: 100%; align-self: center;">
-								<img src="img/linha do tempo/logo_sindicato.jpg" alt="">
+
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_sindicato.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">27/02</h5>
+									<p class="card-text">Fim do Curso de Eletricidade Comercial e Residencial</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Fim do Curso de Eletricidade Comercial e Residencial</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			</br></br></br></br>
 			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
+			</br></br>
 
 			<!--2011-->
 			<div class="row">
-				<div class="col-lg-4"><h1>2011</h1></div>
-				<div class="col-lg-8">
+				<div class="col-sm-4">
+					<div style="margin: 20px;"><h1>2011</h1>Minha Idade: 14 anos</div>
+				</div>
+				<div class="col-sm-8">
 					<div class="row">
-						<div class="col-lg-4">
-							<h5>- 01/12</h5>						
-						</div>
-						<div class="col-lg-4">
-							<div style="width: 100%; height: 100%; align-self: center;">
-								<img src="img/linha do tempo/logo_sindicato.jpg" alt="">
+						<div class="col-sm-12">
+							<div class="card border-light mb-5">
+								<div style="margin: 20px;" align="center">
+									<img src="img/linha do tempo/logo_sindicato.jpg" alt="">
+								</div>
+								<div class="card-body">
+									<h5 class="card-title">01/12</h5>
+									<p class="card-text">Início do Curso de Eletricidade Comercial e Residencial</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4">
-							<h5>Início do Curso de Eletricidade Comercial e Residencial</h5>
 						</div>
 					</div>
 				</div>
+				</br></br>
 			</div>
-
-			</br></br></br></br>
-			<hr style="border: 1px solid red;"></hr>
-			</br></br></br></br>
-
-		</div>
 	</section>
 	<!-- Intro section end -->
 
 	<!-- Footer section -->
-	<footer class="footer-section">
+	<footer class="footer-section" id="contato">
 		<div class="container">
-			
+
 			<div class="row">
-				<div class="col-12" style="text-align: center;">
-					<p style="font-size: xx-large;">Acesse Minhas Redes</p>				
+				<div class="col-sm-12" style="text-align: center;">
+					<p style="font-size: xx-large;">Contato</p>
 				</div>
 			</div>
 
 			</br></br>
-			
+
 			<div class="row">
-				<div class="col-3">					
+				<div class="col-sm-3">
 					<div class="social-links" style="text-align: center;">
 						<a href="https://www.instagram.com/lucas_eliel_/"><i class="fa fa-instagram fa-5x"></i></a>
 					</div>
 				</div>
 
-				<div class="col-3" style="text-align: center;">					
+				<div class="col-sm-3" style="text-align: center;">
 					<div class="social-links">
-						<a href="https://pt-br.facebook.com/lucas.elieldasilva.5"><i class="fa fa-facebook fa-5x"></i></a>
+						<a href="https://pt-br.facebook.com/lucas.elieldasilva.5"><i
+								class="fa fa-facebook fa-5x"></i></a>
 					</div>
 				</div>
 
-				<div class="col-3" style="text-align: center;">					
+				<div class="col-sm-3" style="text-align: center;">
 					<div class="social-links">
 						<a href="https://github.com/Lucas-Eliel"><i class="fa fa fa-github fa-5x"></i></a>
 					</div>
 				</div>
 
-				<div class="col-3" style="text-align: center;">					
+				<div class="col-sm-3" style="text-align: center;">
 					<div class="social-links">
-						<a href="https://www.linkedin.com/in/lucas-eliel-da-silva"><i class="fa fa-linkedin fa-5x"></i></a>
+						<a href="https://www.linkedin.com/in/lucas-eliel-da-silva"><i
+								class="fa fa-linkedin fa-5x"></i></a>
 					</div>
 				</div>
 			</div>
@@ -547,18 +596,20 @@
 			</br></br>
 
 			<div class="row">
-				<div class="col-6" style="text-align: center;">
-					<p style="font-size: x-large; padding-left: 20px"><i class="fa fa-envelope fa-1x" style="padding-right: 10px;"></i>lucaseliel.business@gmail.com</p>				
+				<div class="col-sm-6" style="text-align: center;">
+					<p style="font-size: medium; padding-left: 20px"><i class="fa fa-envelope fa-1x"
+							style="padding-right: 10px;"></i>lucaseliel.business@gmail.com</p>
 				</div>
-				<div class="col-6" style="text-align: center;">
-					<p style="font-size: x-large; padding-left: 20px;"><i class="fa fa-phone fa-1x" style="padding-right: 10px;"></i>(11) 98397-4996</p>				
+				<div class="col-sm-6" style="text-align: center;">
+					<p style="font-size: medium; padding-left: 20px;"><i class="fa fa-phone fa-1x"
+							style="padding-right: 10px;"></i>(11) 98397-4996</p>
 				</div>
 			</div>
 
 		</div>
 	</footer>
 	<!-- Footer section end -->
-	
+
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -567,5 +618,6 @@
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/main.js"></script>
 
-	</body>
+</body>
+
 </html>

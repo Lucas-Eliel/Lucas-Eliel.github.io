@@ -144,11 +144,59 @@ Commom elements
 	text-align: center;
 }
 
+.site-btn2 {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 195px;
+	padding: 23px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: green;
+	color: #fff;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
+.site-btn3 {
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	min-width: 195px;
+	padding: 23px 20px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	background: orangered;
+	color: #fff;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+}
+
 .site-btn:hover {
 	color: #fff;
 }
 
 .site-btn.sb-c2 {
+	background: #383b70;
+}
+
+.site-btn2:hover {
+	color: #fff;
+}
+
+.site-btn2.sb-c2 {
+	background: #383b70;
+}
+
+.site-btn3:hover {
+	color: #fff;
+}
+
+.site-btn3.sb-c2 {
 	background: #383b70;
 }
 
@@ -362,7 +410,7 @@ Hero section
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	background: rgb(96, 101, 115);
+	background: white;
 }
 
 .hs-item h2 {
@@ -395,6 +443,20 @@ Hero section
 	opacity: 0;
 }
 
+.hs-item .site-btn2 {
+	position: relative;
+	top: 50px;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+
+.hs-item .site-btn3 {
+	position: relative;
+	top: 50px;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+
 .hs-item .sb-c2 {
 	margin-left: 8px;
 }
@@ -416,7 +478,17 @@ Hero section
 .owl-item.active .hs-item h2,
 .owl-item.active .hs-item p,
 .owl-item.active .hs-item .site-btn,
+.owl-item.active .hs-item .site-btn2,
+.owl-item.active .hs-item .site-btn3,
 .owl-item.active .hs-item .site-btn.sb-c2 {
+	top: 0;
+	opacity: 1;
+}
+.owl-item.active .hs-item .site-btn2.sb-c2 {
+	top: 0;
+	opacity: 1;
+}
+.owl-item.active .hs-item .site-btn3.sb-c2 {
 	top: 0;
 	opacity: 1;
 }
@@ -439,6 +511,16 @@ Hero section
 .owl-item.active .hs-item .site-btn {
 	-webkit-transition: all 0.5s ease 0.8s;
 	transition: all 0.5s ease 0.8s;
+}
+
+.owl-item.active .hs-item .site-btn2 {
+	-webkit-transition: all 0.6s ease 0.9s;
+	transition: all 0.6s ease 0.9s;
+}
+
+.owl-item.active .hs-item .site-btn3 {
+	-webkit-transition: all 0.7s ease 1s;
+	transition: all 0.7s ease 1s;
 }
 
 .owl-item.active .hs-item .site-btn.sb-c2 {
